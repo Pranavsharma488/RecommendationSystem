@@ -53,8 +53,8 @@ def recommend(movie, num_recommendations=5):
 
 # Load data
 try:
-    movies = pickle.load(open('movie_list.pkl', 'rb'))
-    similarity = pickle.load(open('similarity.pkl', 'rb'))
+    movies = pickle.load(open('app/movie_list.pkl', 'rb'))
+    similarity = pickle.load(open('app/similarity.pkl', 'rb'))
 
     # Ensure movies is a DataFrame
     if not isinstance(movies, pd.DataFrame):
